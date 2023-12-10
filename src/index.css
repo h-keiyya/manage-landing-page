@@ -1,3 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+	font-size: 16px;
+	font-family: 'Be Vietnam Pro', sans-serif;
+	background-image: url('assets/bg-tablet-pattern.svg');
+	background-repeat: no-repeat;
+	background-size: 800px;
+	background-position: 90% -25%;
+}
+
+.cta {
+	background-image: url('assets/bg-simplify-section-desktop.svg');
+	background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+	body {
+		background-position: 180% -6%;
+		background-size: 600px;
+	}
+
+	.cta {
+		background-image: url('assets/bg-simplify-section-mobile.svg');
+		background-position: left -100px;
+	}
+}
+
+@media (max-width: 600px) {
+	body {
+		background-position: 180% -4%;
+		background-size: 400px;
+	}
+}
